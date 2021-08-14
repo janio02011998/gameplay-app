@@ -3,26 +3,11 @@ import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
     container: {
-        flexDirection: 'row', 
+        width: 48,
+        height: 48,
+        backgroundColor: theme.colors.primary, 
+        borderRadius: 8,
         alignItems: 'center',
-    },
-    user: {
-        flexDirection: 'row'
-
-    },
-    greeting: {
-        fontFamily: theme.fonts.title500,
-        fontSize: 24,
-        color: theme.colors.heading,
-        marginRight: 6
-    },
-    username: {
-        fontFamily: theme.fonts.title700,
-        fontSize: 24,
-        color: theme.colors.heading,
-    },
-    message: {
-        fontFamily: theme.fonts.text400,
-        color: theme.colors.highlight,
+        justifyContent: 'center',
     },
 });
