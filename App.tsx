@@ -1,5 +1,5 @@
 import React from 'react';
-import { SignIn } from './src/screens/Signin';
+import { SignIn } from './src/screens/SignIn';
 
 export default function App() {
   return (
