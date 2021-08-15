@@ -19,7 +19,7 @@ export function Profile({ }: Props) {
                         Olá,
                     </Text>
                     <Text style={styles.username}>
-                        Rodrigo,
+                        Jânio,
                     </Text>
                 </View>
                 <Text style={styles.message}>Hoje é dia de vitória</Text>
