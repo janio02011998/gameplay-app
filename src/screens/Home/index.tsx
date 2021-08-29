@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import {  View, FlatList } from 'react-native';
-import { Appointment } from '../../components/Appointment';
+import { View, FlatList } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import { Profile } from '../../components/Profile';
+import { Appointment } from '../../components/Appointment';
 import { ButtonAdd } from '../../components/ButtonAdd';
 import { ListHeader } from '../../components/ListHeader';
 import { ListDivider } from '../../components/ListDivider';
@@ -17,6 +18,8 @@ type Props = {
 
 export function Home({ }: Props) {
     const [category, setCategory] = useState('');
+
+    const { navigate } = useNavigation();
 
     const appointments = [
         {
@@ -48,6 +51,12 @@ export function Home({ }: Props) {
     function handleCategorySelect(categoryId: string) {
         categoryId === category ? setCategory('') : setCategory(categoryId);
     }
+
+    function handleAppointmentDetails() {
+        console.log('ola');
+        navigate('AppointmentDetails');
+    }
+
     return (
         <Background>
             <View style={styles.header}>
@@ -66,7 +75,10 @@ export function Home({ }: Props) {
                     data={appointments}
                     keyExtractor={item => item.id}
                     renderItem={({ item }) => (
-                        <Appointment data={item} />
+                        <Appointment
+                            data={item}
+                            onPress={handleAppointmentDetails}
+                        />
                     )}
                     style={styles.matches}
                     showsHorizontalScrollIndicator={false}
