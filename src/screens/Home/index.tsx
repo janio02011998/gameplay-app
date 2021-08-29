@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Text, View, FlatList } from 'react-native';
+import {  View, FlatList } from 'react-native';
 import { Appointment } from '../../components/Appointment';
 
 import { Profile } from '../../components/Profile';
@@ -7,6 +7,7 @@ import { ButtonAdd } from '../../components/ButtonAdd';
 import { ListHeader } from '../../components/ListHeader';
 import { ListDivider } from '../../components/ListDivider';
 import { CategorySelect } from '../../components/CategorySelect';
+import { Background } from '../../components/Background';
 
 import { styles } from './styles';
 
@@ -48,7 +49,7 @@ export function Home({ }: Props) {
         categoryId === category ? setCategory('') : setCategory(categoryId);
     }
     return (
-        <View>
+        <Background>
             <View style={styles.header}>
                 <Profile />
                 <ButtonAdd />
@@ -72,6 +73,6 @@ export function Home({ }: Props) {
                     ItemSeparatorComponent={() => <ListDivider />}
                 />
             </View>
-        </View>
+        </Background>
     );
 }
