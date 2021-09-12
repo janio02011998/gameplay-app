@@ -19,7 +19,15 @@ export function AppointmentCreate() {
   return (
     <Background>
       <Header title="Agendar partida" />
-      <Text style={styles.label}>Categoria</Text>
+
+      <Text
+        style={[
+          styles.label,
+          { marginLeft: 24, marginTop: 36, marginBottom: 36 },
+        ]}
+      >
+        Categoria
+      </Text>
 
       <CategorySelect
         hasCheckBox
