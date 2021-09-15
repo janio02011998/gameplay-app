@@ -3,8 +3,8 @@ import { theme } from "../../global/styles/theme";
 
 export const styles = StyleSheet.create({
   container: {
-    width: 48,
-    height: 48,
+    width: "100%",
+    height: 95,
     backgroundColor: theme.colors.secondary50,
     borderRadius: 8,
     fontFamily: theme.fonts.text400,

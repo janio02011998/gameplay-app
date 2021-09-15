@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import { Text, View } from "react-native";
+import { Text, View, ScrollView } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { RectButton } from "react-native-gesture-handler";
 
-import { Header } from "components/Header";
-import { Background } from "components/Background";
 import { CategorySelect } from "components/CategorySelect";
-
-import BannerImg from "assets/banner.png";
+import { Background } from "components/Background";
+import { SmallInput } from "components/SmallInput";
+import { GuildIcon } from "components/GuildIcon";
+import { TextArea } from "components/TextArea";
+import { Header } from "components/Header";
 
 import { styles } from "./styles";
 import { theme } from "global/styles/theme";
-import { GuildIcon } from "components/GuildIcon";
 
 export function AppointmentCreate() {
   const [category, setCategory] = useState("");
@@ -35,7 +35,7 @@ export function AppointmentCreate() {
         categorySelected={category}
       />
 
-      <View style={styles.form}>
+      <ScrollView style={styles.form}>
         <RectButton>
           <View style={styles.select}>
             {/* <View style={styles.image} /> */}
@@ -53,7 +53,38 @@ export function AppointmentCreate() {
             />
           </View>
         </RectButton>
-      </View>
+
+        <View style={styles.field}>
+          <View>
+            <Text style={styles.label}>Dia e mês</Text>
+
+            <View style={styles.column}>
+              <SmallInput maxLength={2} />
+              <Text style={styles.divider}>/</Text>
+              <SmallInput maxLength={2} />
+            </View>
+          </View>
+          <View>
+            <Text style={styles.label}>Hora e minuto</Text>
+
+            <View style={styles.column}>
+              <SmallInput maxLength={2} />
+              <Text style={styles.divider}>:</Text>
+              <SmallInput maxLength={2} />
+            </View>
+          </View>
+        </View>
+        <View style={styles.field}>
+          <Text style={styles.label}>Descrição</Text>
+          <Text style={styles.caracteresLimit}>Max 100 caracteres</Text>
+        </View>
+        <TextArea
+          multiline
+          maxLength={100}
+          numberOfLines={5}
+          autoCorrect={false}
+        />
+      </ScrollView>
     </Background>
   );
 }

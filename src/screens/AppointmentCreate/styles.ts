@@ -52,4 +52,5 @@ export const styles = StyleSheet.create({
     marginRight: 4,
     color: theme.colors.highlight,
   },
+  caracteresLimit: {},
 });
