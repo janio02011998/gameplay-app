@@ -1,24 +1,25 @@
-import React, { useState } from "react";
-import { Text, View, ScrollView } from "react-native";
-import { Feather } from "@expo/vector-icons";
-import { RectButton } from "react-native-gesture-handler";
+import React, { useState } from 'react';
+import { Text, View, ScrollView } from 'react-native';
+import { Feather } from '@expo/vector-icons';
+import { RectButton } from 'react-native-gesture-handler';
 
-import { CategorySelect } from "components/CategorySelect";
-import { Background } from "components/Background";
-import { SmallInput } from "components/SmallInput";
-import { GuildIcon } from "components/GuildIcon";
-import { TextArea } from "components/TextArea";
-import { Header } from "components/Header";
+import { CategorySelect } from 'components/CategorySelect';
+import { Background } from 'components/Background';
+import { SmallInput } from 'components/SmallInput';
+import { GuildIcon } from 'components/GuildIcon';
+import { TextArea } from 'components/TextArea';
+import { Header } from 'components/Header';
 
-import { styles } from "./styles";
-import { theme } from "global/styles/theme";
+import { styles } from './styles';
+import { theme } from 'global/styles/theme';
+import { Button } from 'components/Button';
 
 export function AppointmentCreate() {
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState('');
 
   return (
     <Background>
-      <Header title="Agendar partida" />
+      <Header title='Agendar partida' />
 
       <Text
         style={[
@@ -47,7 +48,7 @@ export function AppointmentCreate() {
             </View>
 
             <Feather
-              name="chevron-right"
+              name='chevron-right'
               size={18}
               color={theme.colors.heading}
             />
@@ -84,6 +85,10 @@ export function AppointmentCreate() {
           numberOfLines={5}
           autoCorrect={false}
         />
+
+        <View style={styles.footer}>
+          <Button title='Agender' />
+        </View>
       </ScrollView>
     </Background>
   );
