@@ -1,9 +1,9 @@
-import { Guild, GuildProps } from 'components/Guild';
-import { ListDivider } from 'components/ListDivider';
-import React from 'react';
-import { FlatList, View } from 'react-native';
+import { Guild, GuildProps } from "components/Guild";
+import { ListDivider } from "components/ListDivider";
+import React from "react";
+import { FlatList, View } from "react-native";
 
-import { styles } from './style';
+import { styles } from "./style";
 
 type Props = {
   handleGuildSelect: (guild: GuildProps) => void;
@@ -12,9 +12,9 @@ type Props = {
 function Guilds({ handleGuildSelect }: Props) {
   const guilds = [
     {
-      id: '1',
-      name: 'Léndarios',
-      icon: 'img.png',
+      id: "1",
+      name: "Léndarios",
+      icon: "img.png",
       owner: true,
     },
   ];
@@ -27,8 +27,10 @@ function Guilds({ handleGuildSelect }: Props) {
         renderItem={({ item }) => (
           <Guild data={item} onPress={() => handleGuildSelect(item)} />
         )}
-        ItemSeparatorComponent={() => <ListDivider />}
+        ItemSeparatorComponent={() => <ListDivider isCentered />}
         showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: 68, paddingTop: 104 }}
+        ListHeaderComponent={() => <ListDivider isCentered />}
         style={styles.guilds}
       />
     </View>
