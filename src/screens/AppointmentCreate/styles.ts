@@ -1,5 +1,5 @@
-import { theme } from 'global/styles/theme';
-import { StyleSheet } from 'react-native';
+import { theme } from "global/styles/theme";
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
@@ -15,35 +15,37 @@ export const styles = StyleSheet.create({
     marginTop: 32,
   },
   select: {
-    flexDirection: 'row',
-    width: '100%',
+    flexDirection: "row",
+    width: "100%",
     height: 68,
     borderColor: theme.colors.secondary50,
     borderWidth: 1,
     borderRadius: 8,
-    alignItems: 'center',
+    alignItems: "center",
     paddingRight: 25,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   selectBody: {
     flex: 1,
-    alignItems: 'center',
+    alignItems: "center",
   },
   image: {
     width: 64,
     height: 68,
-    backgroundColor: theme.colors.secondary50,
+    backgroundColor: theme.colors.secondary40,
     borderRadius: 8,
+    borderColor: theme.colors.secondary50,
+    borderWidth: 1,
   },
   field: {
-    width: '100%',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    width: "100%",
+    flexDirection: "row",
+    justifyContent: "space-between",
     marginTop: 30,
   },
   column: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
   },
   divider: {
     fontFamily: theme.fonts.text400,

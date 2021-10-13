@@ -27,9 +27,9 @@ function Guilds({ handleGuildSelect }: Props) {
         renderItem={({ item }) => (
           <Guild data={item} onPress={() => handleGuildSelect(item)} />
         )}
-        ItemSeparatorComponent={() => <ListDivider isCentered />}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: 68, paddingTop: 104 }}
+        ItemSeparatorComponent={() => <ListDivider isCentered />}
         ListHeaderComponent={() => <ListDivider isCentered />}
         style={styles.guilds}
       />

@@ -16,7 +16,6 @@ type Props = {};
 
 export function Home({}: Props) {
   const [category, setCategory] = useState("");
-
   const { navigate } = useNavigation();
 
   const appointments = [
