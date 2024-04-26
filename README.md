@@ -10,10 +10,6 @@
   <img src="https://img.shields.io/github/stars/birobirobiro/nlw-06-gameplay?label=stars&message=MIT&color=991f36&labelColor=0D133D" alt="Stars">
 </p>
 
-<h1 align="center">
-    <img alt="gameplay" title="Gameplay" src=".github/cover.png" />
-</h1>
-
 <br>
 
 ## 🧪 Technologies
@@ -65,4 +61,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) fi
 
 ---
 
-Made with 💜 by [birobirobiro](https://www.birobirobiro.dev) 👋
+Made with 💜 by Janio Carvalho 👋
