@@ -24,8 +24,8 @@ This project was developed using the following technologies:
 Clone the project and access the folder.
 
 ```bash
-$ git clone https://github.com/birobirobiro/nlw-06-gameplay.git
-$ cd nlw-06-gameplay
+$ git clone https://github.com/janio02011998/gameplay-app.git
+$ cd gameplay-app
 ```
 
 Remember to create your App on the Discord server to get the authentication credentials. Then define your App settings in the .env file (remove the example from the .env.example file).
