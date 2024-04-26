@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "gameplay",
+    "name": "Gameplay",
     "slug": "gameplay",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "scheme":"gameplay",
+    "scheme": "com.gameplay",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -28,6 +28,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }

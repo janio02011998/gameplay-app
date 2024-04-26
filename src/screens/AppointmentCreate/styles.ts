@@ -1,5 +1,5 @@
-import { theme } from "global/styles/theme";
 import { StyleSheet } from "react-native";
+import { theme } from "../../global/styles/theme";
 
 export const styles = StyleSheet.create({
   container: {
@@ -33,9 +33,9 @@ export const styles = StyleSheet.create({
     width: 64,
     height: 68,
     backgroundColor: theme.colors.secondary40,
-    borderRadius: 8,
     borderColor: theme.colors.secondary50,
     borderWidth: 1,
+    borderRadius: 8,
   },
   field: {
     width: "100%",
@@ -48,9 +48,9 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   divider: {
-    fontFamily: theme.fonts.text400,
-    fontSize: 18,
     marginRight: 4,
+    fontSize: 15,
+    fontFamily: theme.fonts.text500,
     color: theme.colors.highlight,
   },
   caracteresLimit: {
@@ -59,7 +59,7 @@ export const styles = StyleSheet.create({
     color: theme.colors.highlight,
   },
   footer: {
-    marginVertical: 60,
-    marginBottom: 20,
+    marginVertical: 20,
+    marginBottom: 56,
   },
 });

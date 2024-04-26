@@ -3,7 +3,6 @@ import { Text, View, Image, Alert, ActivityIndicator } from "react-native";
 
 import { useAuth } from "../../hooks/auth";
 
-import { useNavigation } from "@react-navigation/native";
 import IllustrationImg from "assets/illustration.png";
 import { ButtonIcon } from "components/ButtonIcon";
 import { Background } from "components/Background";
@@ -11,8 +10,7 @@ import { Background } from "components/Background";
 import { styles } from "./style";
 
 export function SignIn() {
-  const navigation = useNavigation();
-  const { signIn, user, loading } = useAuth();
+  const { loading, signIn } = useAuth();
 
   async function handleSignIn() {
     try {
