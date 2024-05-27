@@ -1,5 +1,4 @@
 ![image](https://github.com/janio02011998/gameplay/assets/39311457/204f1db4-5246-456c-afaa-693673352c9b)<p align="center">
-  <img alt="gameplay" src="https://github.com/birobirobiro/nlw-06-gameplay/raw/main/.github/cover.png" width="480px">
 </p>
 
 <p align="center">
